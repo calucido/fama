@@ -1,7 +1,7 @@
 <html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108799870-1"></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-108799870-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -12,11 +12,13 @@
   </head>
   <body>
     <script>
-      if (window.location.search === '') {
-        window.location.replace('//calucido.github.io/fama/fall-2017-email-1.html?utm_source=2017-10-27-email&utm_medium=email&utm_campaign=2017-10-27-email');
-      } else {
-        window.location.replace('https://issuu.com/calvinlucido/docs/fama_fall_2017');
-      }
+      window.addEventListener('load', function(){
+        if (window.location.search === '') {
+          window.location.replace('//calucido.github.io/fama/fall-2017-email-1.html?utm_source=2017-10-27-email&utm_medium=email&utm_campaign=2017-10-27-email');
+        } else {
+          window.location.replace('https://issuu.com/calvinlucido/docs/fama_fall_2017');
+        }
+      }, false);
     </script>
   </body>
 </html>
